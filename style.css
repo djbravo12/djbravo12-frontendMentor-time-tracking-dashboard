@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+:root {
+  --Very-dark-blue: hsl(226, 43%, 10%);
+  --Dark-blue: hsl(235, 46%, 20%);
+  --Desaturated-blue: hsl(235, 45%, 61%);
+  --Pale-Blue: hsl(236, 100%, 87%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--Very-dark-blue);
+  color: #fff;
+}
+
+.profile {
+  background-color: hsl(246, 80%, 60%);
+}
+
+.work {
+  background-color: hsl(15, 100%, 70%);
+  background-image: url(./images/icon-work.svg);
+}
+
+.play {
+  background-color: hsl(195, 74%, 62%);
+  background-image: url(./images/icon-play.svg);
+}
+
+.study {
+  background-color: hsl(348, 100%, 68%);
+  background-image: url(./images/icon-study.svg);
+}
+
+.exercise {
+  background-color: hsl(145, 58%, 55%);
+  background-image: url(./images/icon-exercise.svg);
+}
+.social {
+  background-color: hsl(264, 64%, 52%);
+  background-image: url(./images/icon-social.svg);
+}
+
+.self-care {
+  background-color: hsl(43, 84%, 65%);
+  background-image: url(./images/icon-self-care.svg);
+}
+
+.status-color {
+  background-color: hsl(235, 46%, 20%);
+}
+
+.d-grid {
+  display: grid;
+}
+
+main {
+  padding-block: 2em;
+  padding-inline: 1em;
+  grid-gap: 1em;
+  margin: 0 auto;
+  width: 80%;
+  grid-template-areas:
+    "box1"
+    "box2"
+    "box3"
+    "box4"
+    "box5"
+    "box6"
+    "box7";
+}
+
+.b-radius {
+  border-radius: 10px;
+}
+
+.profile-box {
+  grid-template-columns: 25% 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "DP report"
+    "DP user-name";
+  padding-block: 1.3em;
+}
+
+.img-box {
+  grid-area: DP;
+  /* width: 0.1rem; */
+  padding-left: 0.31em;
+  padding-top: 0.31em;
+}
+
+.user-DP {
+  width: 3rem;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.user-report {
+  padding-top: 10px;
+  grid-area: report;
+  font-weight: 100;
+  font-size: 0.9rem;
+}
+.user-name {
+  grid-area: user-name;
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
+.p-x18 {
+  padding-inline: 1.2em;
+}
+
+.padding-block {
+  padding-block: 1em;
+}
+
+.background-properties {
+  padding-top: 1.875em;
+  background-repeat: no-repeat;
+  background-position: 92% -6px;
+  background-size: 15%;
+  color: white;
+}
+
+.activity-type {
+  font-size: 1rem;
+}
+
+.activity-duration {
+  margin-block: 0.5em;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.more-info {
+  letter-spacing: 2px;
+  font-size: 1em;
+  padding-bottom: 8px;
+  display: inline-block;
+}
+
+.activity-hours {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.previous-activity-duration {
+  font-size: 0.7rem;
+  color: var(--Pale-Blue);
+}
+
+.dashboard {
+  padding-block: 1em;
+  font-weight: 100;
+}
+
+.dashboard a:hover {
+  color: #fff;
+}
+
+.hover-color:hover {
+  background-color: var(--Desaturated-blue);
+  cursor: pointer;
+}
+
+.color1 {
+  color: var(--Desaturated-blue);
+}
+.color2 {
+  color: #fff;
+}
+
+@media (min-width: 769px) {
+  main {
+    margin: 5.5em auto;
+    width: 75%;
+    gap: 1.5rem;
+    grid-template-columns: 20% repeat(3, 1fr);
+    grid-template-areas:
+      "box1 box2 box3 box4"
+      "box1 box5 box6 box7";
+  }
+
+  .box1 {
+    grid-area: box1;
+  }
+
+  .profile-box {
+    grid-template-rows: 1fr 20% 30%;
+    grid-template-areas:
+      "DP DP"
+      "report report"
+      "user-name user-name";
+    padding-block: 2em;
+    padding-block-end: 4em;
+  }
+
+  .dashboard {
+    padding-top: 0;
+  }
+
+  .user-name {
+    padding-right: 0em;
+    font-size: 2rem;
+  }
+
+  .flex-row {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .mx-t {
+    margin-top: 20px;
+  }
+  .padding-block {
+    padding-block: 1.2em;
+  }
+
+  .activity-hours {
+    font-size: 2.5rem;
+  }
+  .previous-activity-duration {
+    margin-top: 1em;
+    word-spacing: 2px;
+  }
+
+  .previous-activity-duration p:nth-child(2) {
+    margin-inline: 0.3em;
+  }
+}

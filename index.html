@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="d-grid">
+      <div class="box1 b-radius status-color">
+        <div class="d-grid profile-box b-radius profile p-x18">
+          <div class="img-box">
+            <img src="./images/image-jeremy.png" alt="" class="user-DP" />
+          </div>
+          <span class="user-report">Report for</span>
+          <h1 class="user-name">Jeremy Robson</h1>
+        </div>
+
+        <div class="b-radius p-x18 dashboard flex flex-row">
+          <a href="#" class="mx-t dashboard-info" id="daily-tracker">Daily</a
+          ><a href="#" class="mx-t dashboard-info" id="weekly-tracker">Weekly</a
+          ><a href="#" class="mx-t dashboard-info" id="monthly-tracker"
+            >Monthly</a
+          >
+        </div>
+      </div>
+
+      <div class="box2 b-radius">
+        <div class="work b-radius background-properties">
+          <div class="status-color b-radius padding-block p-x18 hover-color">
+            <div class="activity-type-box flex">
+              <span class="activity-type">Work</span>
+              <a href="#" class="more-info">...</a>
+            </div>
+            <div class="activity-duration flex flex-row">
+              <div>
+                <p class="activity-hours" id="work-current-hours">32hrs</p>
+              </div>
+              <div class="previous-activity-duration flex">
+                <p id="work-previous-timeline" class="timeline">Last Week</p>
+                <p>-</p>
+                <p id="work-previous-hours">36hrs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box3 b-radius">
+        <div class="play b-radius background-properties">
+          <div class="status-color b-radius padding-block p-x18 hover-color">
+            <div class="activity-type-box flex">
+              <span class="activity-type">Play</span>
+              <a href="#" class="more-info">...</a>
+            </div>
+            <div class="activity-duration flex flex-row">
+              <div>
+                <p class="activity-hours" id="play-current-hours">10hrs</p>
+              </div>
+              <div class="previous-activity-duration flex">
+                <p id="play-previous-timeline" class="timeline">Last Week</p>
+                <p>-</p>
+                <p id="play-previous-hours">8hrs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box4 b-radius">
+        <div class="study b-radius background-properties">
+          <div class="status-color b-radius padding-block p-x18 hover-color">
+            <div class="activity-type-box flex">
+              <span class="activity-type">Study</span>
+              <a href="#" class="more-info">...</a>
+            </div>
+            <div class="activity-duration flex flex-row">
+              <div>
+                <p class="activity-hours" id="study-current-hours">4hrs</p>
+              </div>
+              <div class="previous-activity-duration flex">
+                <p id="study-previous-timeline" class="timeline">Last Week</p>
+                <p>-</p>
+                <p id="study-previous-hours">7hrs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box5 b-radius">
+        <div class="exercise b-radius background-properties">
+          <div class="status-color b-radius padding-block p-x18 hover-color">
+            <div class="activity-type-box flex">
+              <span class="activity-type">Exercise</span>
+              <a href="#" class="more-info">...</a>
+            </div>
+            <div class="activity-duration flex flex-row">
+              <div>
+                <p class="activity-hours" id="exercise-current-hours">5hrs</p>
+              </div>
+              <div class="previous-activity-duration flex">
+                <p id="exercise-previous-timeline" class="timeline">
+                  Last Week
+                </p>
+                <p>-</p>
+                <p id="exercise-previous-hours">11hrs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box6 b-radius">
+        <div class="social b-radius background-properties">
+          <div class="status-color b-radius padding-block p-x18 hover-color">
+            <div class="activity-type-box flex">
+              <span class="activity-type">Social</span>
+              <a href="#" class="more-info">...</a>
+            </div>
+            <div class="activity-duration flex flex-row">
+              <div>
+                <p class="activity-hours" id="social-current-hours">5hrs</p>
+              </div>
+              <div class="previous-activity-duration flex">
+                <p id="social-previous-timeline" class="timeline">Last Week</p>
+                <p>-</p>
+                <p id="social-previous-hours">10hrs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box7 b-radius">
+        <div class="self-care b-radius background-properties">
+          <div class="status-color b-radius padding-block p-x18 hover-color">
+            <div class="activity-type-box flex">
+              <span class="activity-type">Self Care</span>
+              <a href="#" class="more-info">...</a>
+            </div>
+            <div class="activity-duration flex flex-row">
+              <div>
+                <p class="activity-hours" id="selfcare-current-hours">2hrs</p>
+              </div>
+              <div class="previous-activity-duration flex">
+                <p id="selfcare-previous-timeline" class="timeline">
+                  Last Week
+                </p>
+                <p>-</p>
+                <p id="selfcare-previous-hours">7hrs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
